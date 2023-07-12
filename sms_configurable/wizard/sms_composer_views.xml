@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="sms_configurable_composer_view_form" model="ir.ui.view">
+    <field name="name">sms.configurable.composer.view.form</field>
+    <field name="model">sms.composer</field>
+    <field name="inherit_id" ref="sms.sms_composer_view_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//button[@name='action_send_sms'][2]" position="replace">
+      </xpath>
+    </field>
+  </record>
+
+</odoo>
